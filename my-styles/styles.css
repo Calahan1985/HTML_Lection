@@ -1,0 +1,118 @@
+body {margin: 0;}
+#main-container {
+border: 2px solid #000;
+box-size: border-box;
+color: #00f;
+width: 150px;
+}
+p {color: #f00;}
+p {color: #00f;}
+span {color: #f0f;}
+		
+#main-container .inner-wrapper {color: #000;}
+/*#main-container .inner-wrapper .third {color: #0f0;}*/
+		
+/*.inner-wrapper .third {background-color: #f00;}*/
+.third.left {background-color: #ff0;}
+		
+* {box-sizing: border-box;}
+
+.inner-wrapper li {
+	border: 2px solid #0f0;	
+}
+.inner-wrapper li:first-child {
+	border-width: 5px;
+}
+.inner-wrapper li:last-child {
+	border-style: dotted;
+}
+
+.inner-wrapper li:nth-child(5){ /*обращаемся к конкретному элементу списка, нумерация начинается с 1*/
+	border-color:#fff;
+}
+
+.inner-wrapper li:nth-child(2n){ /*обращаемся к каждому четному элементу списка*/
+	border-color:#fff;
+}
+
+.inner-wrapper li:nth-child(2n-1){ /*обращаемся к каждому НЕчетному элементу списка*/
+	border-color:#000;
+}
+
+/*.inner-wrapper > li {background-color: #000;}*/
+ul > li {background-color: #000;}
+
+.inner-wrapper ~ div {
+	width:150px;
+	height:150px;
+	background: #00f;
+}
+
+.inner-wrapper + div {
+	width:150px;
+	height:150px;
+	background: #f00;
+}
+
+/* [type="text"] {
+	
+} */
+
+/*регулярное выражение - ищет с начала строки название класса*/
+/* [class^="inn"] {
+	border: 5px solid #000;
+} */
+
+/*регулярное выражение - ищет с конца строки название класса*/
+/* [class$="inn"] {
+	border: 5px solid #000;
+} */
+
+/* a:visited {} /*выберет все посещенные ссылки*/
+/* a:link {} /*выберет все НЕ посещенные ссылки*/
+
+/* [href^="http"] {} /*выбераем все ссылки, которые начинаются с ... */
+
+/*что-то делаем при наведении мышки*/
+span:hover {
+	cursor: pointer; /*выводит курсор в виде руки с указательным пальцем*/
+	color:#fff
+} 
+
+/* .classname div a.colored {} /*имяКласса див ссылка_с_классом_colored*/
+
+/* list-style: list-style-type list-style-position list-style-image; /*порядок именно такой*/
+
+ul {
+	margin: 0;
+	padding: 0;
+	/* list-style-position: inside; */
+	/* list-style-image: url() */
+	list-style-type:none;
+}
+
+span {
+	text-decoration: underline;
+	text-decoration: overline;
+	text-decoration: line-through;
+	text-decoration: none;
+}
+
+a {text-decoration: none;}
+
+li {
+	position: static;
+}
+
+ul {
+	position: relative;
+}
+
+.absolute {
+	/* position: fixed; */
+	position: absolute;
+	left: 0;
+	top: 100%;
+	
+}
+
